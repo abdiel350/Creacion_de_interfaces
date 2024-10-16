@@ -23,7 +23,8 @@ de guardar y cancelar el cual una vez editada la pelicula mostrara edicion exito
   -Para la implementación de  Independencia del hardware, usando disposición horizontal (layout-land),tuve el problema de que me equivoque de nombre en un solo boton y por no ver ese error nunca me mostraba la pantalla y se cerraba mi aplicación, una vez solucionado esto funciono todo de manera correcta.
     
     -EN EL CODIGO SE MUESTRA más entendido todo lo que se comenta en esta parte, hay pequeños comentarios.
-    -En general los problemas mas fuertes se me presentaran fue la integración de Compose.
+  
+    -En general los problemas mas fuertes se me presentaron en la integración de Compose.
     
     
     
