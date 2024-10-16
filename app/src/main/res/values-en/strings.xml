@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Filmoteca</string>
+    <string name="text_view_content">Created by Abdiel </string>
+    <string name="button4">Go to website</string>
+    <string name="button5">Get Support</string>
+    <string name="button6">Got Back</string>
+
+    <string name="title_edit_movie">Editing movie</string>
+    <string name="hint_title">Movie title</string>
+    <string name="hint_director">Director name</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_imdb_link">IMDB Link</string>
+    <string name="hint_notes">Comments</string>
+    <string name="formato">Format</string>
+    <string name="genero">gender</string>
+    <string name="editar_peli">edit movie</string>
+    <string name="volver_principal">return to main</string>
+
+
+    <!-- Buttons -->
+    <string name="btn_take_photo">TAKE\nPHOTO</string>
+    <string name="btn_select_image">SELECT\nIMAGE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_save">SAVE</string>
+
+    <string-array name="genre_array">
+        <item>Action</item>
+        <item>Drama</item>
+        <item>Comedy</item>
+        <item>Terror</item>
+        <item>Sci-Fi</item>
+    </string-array>
+
+    <string-array name="format_array">
+        <item>DVD</item>
+        <item>Blu-ray</item>
+        <item>Online</item>
+    </string-array>
+
+</resources>

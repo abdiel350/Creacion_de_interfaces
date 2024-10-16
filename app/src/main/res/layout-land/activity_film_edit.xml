@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilmEditActivity"
+    android:padding="16dp">
+
+    <!-- Layout horizontal para los botones en la parte superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_take_photo"
+            android:backgroundTint="#D6D7D7"
+            android:textColor="#000000"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_select_image"
+            android:backgroundTint="#D6D7D7"
+            android:textColor="#000000"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <!-- Layout horizontal: Imagen a la izquierda y datos a la derecha -->
+    <LinearLayout
+        android:id="@+id/linearLayoutImageAndData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="-8dp">
+
+        <!-- Imagen de la película -->
+
+        <!-- Contenedor para los datos de la película -->
+        <ImageView
+            android:id="@+id/imageViewPoster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="-80dp"
+            android:contentDescription="Imagen del cartel"
+            android:src="@drawable/tigre" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- Campo de texto para el título de la película -->
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_title"
+                android:inputType="text"
+                android:layout_marginBottom="-10dp"/>
+
+            <!-- Campo de texto para el director -->
+            <EditText
+                android:id="@+id/editTextDirector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_director"
+                android:inputType="text"
+                android:layout_marginBottom="-10dp"/>
+
+            <!-- Campo de texto para el año de estreno -->
+            <EditText
+                android:id="@+id/editTextReleaseYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_year"
+                android:inputType="number"
+                android:layout_marginBottom="1dp"/>
+
+            <!-- Campo de texto para el enlace a IMDB -->
+            <EditText
+                android:id="@+id/editTextIMDBLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_imdb_link"
+                android:inputType="textUri"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Spinner para el género -->
+            <Spinner
+                android:id="@+id/spinnerGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/genre_array"
+                android:prompt="@string/genre_prompt"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Spinner para el formato -->
+            <Spinner
+                android:id="@+id/spinnerFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/format_array"
+                android:prompt="@string/format_prompt"
+                android:layout_marginBottom="1dp"/>
+
+            <!-- Área de texto para notas -->
+            <EditText
+                android:id="@+id/editTextNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_notes"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botones para guardar y cancelar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#D6D7D7"
+            android:text="@string/btn_cancel"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D6D7D7"
+            android:text="@string/btn_save"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

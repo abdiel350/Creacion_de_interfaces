@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Filmoteca</string>
+    <string name="text_view_content">Creado por Abdiel </string>
+    <string name="button4">Ir al sitio web</string>
+    <string name="button5">Obtener Soporte</string>
+    <string name="button6">Volver</string>
+
+    <!-- Títulos y mensajes -->
+    <string name="title_edit_movie">Editando película</string>
+    <string name="hint_title">Título de la película</string>
+    <string name="hint_director">Nombre del director</string>
+    <string name="hint_year">Año</string>
+    <string name="hint_imdb_link">Enlace a IMDB</string>
+    <string name="hint_notes">Comentarios</string>
+
+    <!-- Botones -->
+    <string name="btn_take_photo">CAPTURA\nFOTOGRAFÍA</string>
+    <string name="btn_select_image">SELECCIONA\nIMAGEN</string>
+    <string name="btn_cancel">CANCELAR</string>
+    <string name="btn_save">GUARDAR</string>
+
+
+
+    <!-- Lista de géneros de películas -->
+    <string-array name="genre_array">
+        <item>Acción</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Fantasía</item>
+        <item>Documental</item>
+        <!-- Agrega más géneros según necesites -->
+    </string-array>
+
+    <!-- Lista de formatos de películas -->
+    <string-array name="format_array">
+        <item>Blu-ray</item>
+        <item>DVD</item>
+        <item>Streaming</item>
+        <item>VHS</item>
+        <!-- Agrega más formatos según necesites -->
+    </string-array>
+
+
+    <!-- Prompts para los Spinners -->
+    <string name="genre_prompt">Seleccione un género</string>
+    <string name="format_prompt">Seleccione un formato</string>
+    <string name="formato">Formato</string>
+    <string name="genero">Genero</string>
+    <string name="editar_peli">Editar</string>
+    <string name="volver_principal">Volver_principal</string>
+
+
+</resources>

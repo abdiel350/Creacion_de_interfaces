@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilmDataActivity">
+
+    <!-- Imagen de la película -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Imagen de la película"
+        android:src="@drawable/tigre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- El mensaje se muestra aquí, por encima de los datos de la película -->
+    <TextView
+        android:id="@+id/labelMovieData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensaje de estado"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/imageView2"
+        app:layout_constraintStart_toEndOf="@id/imageView2" />
+
+    <!-- para mostrar la pelicula -->
+    <TextView
+        android:id="@+id/labelMovieDataa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/labelMovieData"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Director -->
+    <TextView
+        android:id="@+id/textView_director_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_director"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/labelMovieDataa"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Director"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_director_label"
+        app:layout_constraintStart_toStartOf="@id/textView_director_label"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Año de estreno -->
+    <TextView
+        android:id="@+id/textView_release_year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_year"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_director"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView_release_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/textView_release_year_label"
+        app:layout_constraintTop_toBottomOf="@id/textView_release_year_label"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Género -->
+    <TextView
+        android:id="@+id/textView_genre_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genero"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_release_year"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acción"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/textView_genre_label"
+        app:layout_constraintTop_toBottomOf="@id/textView_genre_label"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Formato -->
+    <TextView
+        android:id="@+id/textView_format_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formato"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_genre"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blu-ray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/textView_format_label"
+        app:layout_constraintTop_toBottomOf="@id/textView_format_label"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Notas añadidas por el usuario -->
+    <TextView
+        android:id="@+id/textView_notes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_notes"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_format"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aquí puedes escribir notas personales sobre la película..."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textView_notes_label"
+        app:layout_constraintStart_toStartOf="@id/textView_notes_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botón Ver en IMDb -->
+    <Button
+        android:id="@+id/button_view_imdb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver en IMDB"
+        android:backgroundTint="#D6D7D7"
+        app:layout_constraintTop_toBottomOf="@id/textView_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="55dp"
+        android:textColor="#000000"
+        android:padding="8dp" />
+
+    <!-- Botón Volver a la principal -->
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_principal"
+        android:backgroundTint="#D6D7D7"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button7"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <!-- Botón Editar película  -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_peli"
+        android:backgroundTint="#D6D7D7"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
